@@ -221,27 +221,23 @@ I know I am not good at Haskell :P
 ```haskell
 -- this was the best I could as of writing this article
 -- feel to suggest better methods
-fizzbuzzer :: (Integral a, Show a) => a -> a -> IO ()
-fizzbuzzer x y = do
-      putStrLn $ case (x `rem` 3, x `rem` 5) of
+fizzbuzz x = case (x `rem` 3, x `rem` 5) of
         (0,0) -> "fizzbuzz"
         (0,_) -> "fizz"
         (_,0) -> "buzz"
         _     -> ""
-      if x < y
-      then fizzbuzzer (x + 1) y
-      else return ()
 
 main = do
       st <- getLine
       let x = (read st :: Int)
       vt <- getLine
       let y = (read vt :: Int)
-      fizzbuzzer x y
+      let z = filter (\x -> length(x) > 0) $ fmap fizzbuzz [x..y]
+      putStrLn $ show $ z
 ```
 
 ## Conclusion
 I am not sure how I should put this but there are some clear differences that can be seen here, but which one is more clear surely depends on who you ask. 
 
 Want to add code for you favourite langauge? Or suggest improvements go ahead and send a PR for this file on 
-[my_blog](https://github.com/swarnimarun/swarnimarun.github.io)
+[my-blog](https://github.com/swarnimarun/swarnimarun.github.io)

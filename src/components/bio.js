@@ -64,8 +64,6 @@ const Bio = () => {
         <a
           href={`https://twitter.com/${social.twitter}`}
           style={{
-            minHeight: 19,
-            textDecoration: "none",
             marginLeft: "10px",
           }}
         >
@@ -81,9 +79,6 @@ const Bio = () => {
         <a
           href={`https://github.com/${social.github}`}
           style={{
-            minHeight: 19,
-            textDecoration: "none",
-            listStyle: "none",
             marginLeft: "10px",
           }}
         >

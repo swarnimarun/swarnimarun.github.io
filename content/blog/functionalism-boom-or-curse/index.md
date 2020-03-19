@@ -33,9 +33,10 @@ for (let x = a; x < b; x++) {
         console.log(v);
 }
 ```
-<br/>
 
+<br/>
 Let's make it a little more functional + js-esque
+
 ```js
 // coerce into int
 const getInt = x => parseInt(prompt(x))
@@ -49,6 +50,7 @@ let b = getInt("input a")
     .filter(x => x) // wish js had a default identity function
     .forEach(console.log)
 ```
+<br/>
 So first one is a typical imperative code without any kinds of magic or hidden language features being used while second one is a tad bit more complex with use of coercion, destructoring,<br/>
 Does the second one really look soo much better???<br/>
 Not really...<br/>
@@ -61,9 +63,8 @@ So what then, ofc this is cherry picked example where functional programming doe
 Well let's first take a look at some more code from other languages.
 
 ### Python
-<br/>
-Naive/imperative python code,
 
+Naive/imperative python code,
 ```py
 def main():
   a = input()
@@ -243,4 +244,4 @@ main = do
 I am not sure how I should put this but there are some clear differences that can be seen here, but which one is more clear surely depends on who you ask. 
 
 Want to add code for you favourite langauge? Or suggest improvements go ahead and send a PR for this file on 
-[my_blog](github.com/swarnimarun/blog)
+[my_blog](https://github.com/swarnimarun/swarnimarun.github.io)

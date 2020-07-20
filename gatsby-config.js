@@ -3,7 +3,7 @@ module.exports = {
     title: `codefunc`,
     author: {
       name: `Swarnim Arun`,
-      summary: `freelancer, who loves to code new things. And a deep interest in understanding programming languages.`,
+      summary: `freelancer, who loves to code new things. And a deep interest in understanding science behind programming languages.`,
     },
     description: `collection of my thoughts and project logs`,
     siteUrl: `https://swarnimarun.github.io/`,
